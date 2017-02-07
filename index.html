@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Žaibas internetas ir televizija</title>
+    <link rel="icon" href="img/zLogo.png" type="image/png">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!--Custom style-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+  </head>
+  <body>
+        <!-- Navigation -->
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+                 <a class="navbar-brand" href="#"><img id="logo" src="img/LOGO.png" alt="Brand"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right text-center">
+              	<li style="color: #337ab7;"><i class="fa fa-phone" aria-hidden="true"></i> +370 310 54598</li>
+                <li><a href="#" title="">PAGRINDINIS</a></li>
+                <li><a href="#" title="">TELEVIZIJA</a></li>
+                <li><a href="#" title="">INTERNETAS</a></li>
+                <li><a href="#" title="">KONTAKTAI</a></li>
+              </ul>
+            </div>
+        </div> <!-- /.container -->
+    </nav>
+    
+    <div class="container" id="mainPageImage">
+        <div class="col-xs-12">
+            <p class="OpenSans" id="new" >NAUJI „Žaibo TV“</p>
+            <p class="OpenSans" id="here" >PAKETAI JAU ČIA</p>
+            <button type="" id="order" class="btn">UŽSISAKYTI</button>
+        </div>
+    </div>
+
+    <div class="container"> <!-- Nav Tabs -->
+    	<ul class="nav nav-pills nav-justified">
+    		<li class="active" ><a href="#Plans" data-toggle="tab">PLANAI</a></li>
+    		<li><a href="#Adress" data-toggle="tab">ADRESAS</a></li>
+    		<li><a href="#Other" data-toggle="tab">KITA</a></li>
+    	</ul>
+
+	   	<div class="tab-content">
+	   		<div class="tab-pane active fade in" id="Plans">
+	   			<p>Interneto planai</p>
+                <div class="btn-group" role="group" aria-label="Internetas">
+                    <button type="button" class="btn btn-secondary">10 Mbps</button>
+                    <button type="button" class="btn btn-secondary">50 Mbps</button>
+                    <button type="button" class="btn btn-secondary">100 Mbps</button>
+                </div>
+                <p>Televizijos paketai</p>
+                <div class="btn-group" role="group" aria-label="Televizija">
+                    <button type="button" class="btn btn-secondary">Pagrindinis</button>
+                    <button type="button" class="btn btn-secondary">Viasat Sport</button>
+                    <button type="button" class="btn btn-secondary">Viasat Movie</button>
+                </div>
+	   		</div>
+	    	<div class="tab-pane fade" id="Adress">
+	    		<p>Cia reikes pasirinkti savo adresa</p>
+	    	</div>
+	    	<div class="tab-pane fade" id="Other">
+	    		<p>Cia reikes pateikti savo papildoma kntaktine informacija</p>
+	    	</div>
+	    </div>
+	</div>
+
+    <footer>
+    	<div class="container-fluid">
+    		<div class="row text-center">
+            	<p><small>&copy 2017, Žaibas</small></p>
+        	</div>
+    	</div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+     <!-- Script to Activate the Carousel -->
+    <script src='js/main.js'></script>
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  </body>
+</html>

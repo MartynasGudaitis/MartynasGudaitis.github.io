@@ -1,0 +1,119 @@
+/* ========================== Navbar ========================== */ 
+#logo{
+    height: 250%;
+}
+
+.navbar-brand{
+    height: 30px;
+    padding: 0px 7px;
+}
+
+.navbar{
+    margin-bottom: 0px;
+    -webkit-box-shadow: 0px 3px 9px -1px rgba(107,107,107,0.75);
+       -moz-box-shadow: 0px 3px 9px -1px rgba(107,107,107,0.75);
+            box-shadow: 0px 3px 9px -1px rgba(107,107,107,0.75);
+}
+.nav>li{
+    padding: 10px; 
+}
+
+.nav>li>a{
+    padding: 0px; 
+}
+.nav-pills.nav-justified>li{
+    font-size: 2vw;
+}
+/* ========================== Main Page Image ========================== */
+.OpenSans{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#new{
+    font-size: 7vw;
+    margin-top: 3%;
+    font-weight: 700;
+}
+
+#here{
+    font-size: 6vw;
+    font-weight: 400;
+}
+
+#mainPageImage{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+#order{
+    color: #fff;
+    background-color: #cc0000;
+    font-size: 3.5vw;
+    margin-top: 3.5%;
+    margin-left: 28%;
+    font-weight: 400;
+}
+
+/* ========================== Footer ========================== */
+footer{
+    background-color: #cc0000;
+    color: #fff;
+}
+
+/* ========================== Custom Bootstrap media queries ========================== */
+/* to 767px */
+@media only screen and (max-width: 767px) {
+    .nav-pills.nav-justified>li{
+    padding: 2px 0px;
+    display: table-cell;
+    width: 1%;
+    font-size: 3vw;
+    }
+
+    #mainPageImage{
+        height: 225px;
+        background-image: url('../img/bg-768-225.png');
+    }
+
+    #order{
+    margin-top: 2.5%;
+    font-size: 3vw
+    }
+}
+/* sm from 768px to 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    #mainPageImage{
+        height: 370px;
+        background-image: url('../img/bg-992-370.png');
+    }
+}
+/* md from 992px to 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #mainPageImage{
+        height: 445px;
+        background-image: url('../img/bg-1200-445.png');
+    }
+}
+/* lg from 1200px and more */
+@media only screen and (min-width: 1200px) {
+    #mainPageImage{
+        height: 495px;
+        background-image: url('../img/bg-2000-495.png');
+    }
+    #new{
+    font-size: 5.5vw;
+    }
+
+    #here{
+    font-size: 4.5vw;
+    }
+    #order{
+        font-size: 25pt;
+    }
+}
