@@ -13,5 +13,5 @@ function Add() {
 		sum -=netPlan1;
 		i--;
 	}
-	total.innerHTML = "Suma<br>" + String(sum) + " €";
+	total.innerHTML = "Suma<br>" + String(sum.toFixed(2)) + " €";
 }
