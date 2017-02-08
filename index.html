@@ -52,12 +52,13 @@
         <div class="col-xs-12">
             <p class="OpenSans" id="new" >NAUJI „Žaibo TV“</p>
             <p class="OpenSans" id="here" >PAKETAI JAU ČIA</p>
-            <button type="" id="order" class="btn">UŽSISAKYTI</button>
+            <a href="#orderTvNet" title="Užsisakyti"><button type="button" id="order" class="btn">UŽSISAKYTI</button></a>
         </div>
     </div>
 
-    <div class="container"> <!-- Nav Tabs -->
-    	<ul class="nav nav-pills nav-justified myPills">
+    <div class="container" id="orderTvNet"> <!-- Nav Tabs -->
+    	<ul class="nav nav-pills nav-justified myPills
+        ">
     		<li class="active" ><a href="#Plans" data-toggle="tab">PLANAI</a></li>
     		<li><a href="#Adress" data-toggle="tab">ADRESAS</a></li>
     		<li><a href="#Other" data-toggle="tab">KITA</a></li>
@@ -65,7 +66,22 @@
 
 	   	<div class="tab-content">
 	   		<div class="tab-pane active fade in" id="Plans">
-	   			<p>Interneto planai</p>
+                <div class="col-xs-10">
+                  <div class="btn-group">
+                      <button type="button" id="netPlan1" onclick="Add()">10 Mbps</button>
+                      <button type="button" id="netPlan2">50 Mbps</button>
+                      <button type="button" id="netPlan3">100 Mbps</button>
+                  </div>
+                  <ul class="list-inline">
+                      <li><button type="button" id="tvPlan1">Pagrindinis</button></li>
+                      <li><button type="button" id="tvPlan2">Viasat Sport</button></li>
+                      <li><button type="button" id="tvPlan3">Viasat Movie</button></li>
+                  </ul>  
+                </div>
+                <div class="col-xs-2" id="Sum">
+                    <p id="total" >Suma<br>0.00 €</p>
+                </div>
+                <!--
                 <div class="btn-group" role="group" aria-label="Internetas">
                     <button type="button" class="btn btn-secondary">10 Mbps</button>
                     <button type="button" class="btn btn-secondary">50 Mbps</button>
@@ -77,6 +93,7 @@
                     <button type="button" class="btn btn-secondary">Viasat Sport</button>
                     <button type="button" class="btn btn-secondary">Viasat Movie</button>
                 </div>
+                -->
 	   		</div>
 	    	<div class="tab-pane fade" id="Adress">
 	    		<p>Cia reikes pasirinkti savo adresa</p>
@@ -87,6 +104,9 @@
 	    </div>
 	</div>
 
+    <div style="height: 600px"  class="bg-danger">
+        
+    </div>
     <footer>
     	<div class="container-fluid">
     		<div class="row text-center">
