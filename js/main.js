@@ -93,3 +93,10 @@ function Add(_id){
 	}
 	total.innerHTML = "Suma<br>" + String(sum.toFixed(2)) + " €";
 }
+
+var width = window.innerWidth;
+
+if (width < 410) {
+	console.log(width);
+	document.getElementById(tvPlan2).innerHTML = "Viasat<br>Sport";
+}

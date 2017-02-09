@@ -38,7 +38,7 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right text-center">
-              	<li style="color: #337ab7;"><i class="fa fa-phone" aria-hidden="true"></i> +370 310 54598</li>
+              	<li id = "phone" ><i class="fa fa-phone" aria-hidden="true"></i> +370 310 54598</li>
                 <li><a href="#" title="">PAGRINDINIS</a></li>
                 <li><a href="#" title="">TELEVIZIJA</a></li>
                 <li><a href="#" title="">INTERNETAS</a></li>
@@ -56,7 +56,7 @@
         </div>
     </div>
 
-    <div class="container" id="orderTvNet"> <!-- Nav Tabs -->
+    <div class="container paddingZero" id="orderTvNet"> <!-- Nav Tabs -->
     	<ul class="nav nav-pills nav-justified myPills
         ">
     		<li class="active" ><a href="#Plans" data-toggle="tab">PLANAI</a></li>
@@ -66,14 +66,14 @@
 
 	   	<div class="tab-content">
 	   		<div class="tab-pane active fade in" id="Plans">
-                <div class="col-xs-10">
-                    <p>Interneto Planai</p>
+                <div class="col-xs-10 paddingZero">
+                    <p class="text-center tvNet OpenSans">Interneto Planai</p>
                     <div>
                       <button class="" type="button" id="netPlan1" onclick="Add('netPlan1')">10 Mbps</button>
                       <button class="" type="button" id="netPlan2" onclick="Add('netPlan2')">50 Mbps</button>
                       <button class="" type="button" id="netPlan3" onclick="Add('netPlan3')">100 Mbps</button>
                     </div>
-                    <p>Televizijos Planai</p>
+                    <p class="text-center tvNet OpenSans">Televizijos Planai</p>
                     <div>
                         <button class="" type="button" id="tvPlan1" onclick="Add('tvPlan1')">Pagrindinis</button>
                         <button class="" type="button" id="tvPlan2" onclick="Add('tvPlan2')">Viasat Sport</button>
@@ -81,7 +81,7 @@
                     </div>  
                 </div>
 
-                <div class="col-xs-2" id="Sum">
+                <div class="col-xs-2 OpenSans text-center paddingZero" id="Sum">
                     <p id="total" >Suma<br>0.00 €</p>
                 </div>
 

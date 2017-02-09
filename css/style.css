@@ -1,4 +1,8 @@
 /* ========================== Navbar ========================== */ 
+.paddingZero, .nav>li>a{
+    padding:  0px;
+}
+
 #logo{
     height: 250%;
 }
@@ -15,12 +19,13 @@
             box-shadow: 0px 3px 9px -1px rgba(107,107,107,0.75);
 }
 .nav>li{
-    padding: 10px; 
+    padding: 10px;
+    color: #003399;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75em;
 }
 
-.nav>li>a{
-    padding: 0px; 
-}
 .nav-pills.nav-justified>li{
     font-size: 2vw;
     padding: 2px 0px;
@@ -48,7 +53,7 @@
     background-repeat: no-repeat;
     background-size: auto 100%;
 }
-
+/* ========================== Plan Ordering Form ========================== */
 p{
     margin-bottom: 0px;
 }
@@ -61,14 +66,42 @@ p{
     margin-left: 28%;
     font-weight: 400;
 }
+.tvNet{
+    font-size: 1.75em;
+    padding-bottom: 5px;
+}
 
 .NaNactivated,
-.activated{
-    background-color: orange;
+.activated, #netPlan1:hover, #netPlan2:hover, #netPlan3:hover, #tvPlan1:hover, #tvPlan2:hover, #tvPlan3:hover, .NaN:hover{
+    background: #003399;
+}
+
+button{
+    background: #99bbff;
+}
+
+#netPlan1, #netPlan2, #netPlan3, #tvPlan1, #tvPlan2, #tvPlan3, .NaN{
+    min-width: 31.25%;
+    max-width: 31.25%;
+    height: 55px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    border: none;
+    margin-right: 2px;
+    margin-left: 2px;
+    min-width: 32.5%;
+    max-width: 32.5%; 
 }
 
 #Sum{
-    padding: 0px;
+    padding: 40px 0px 50px 5px;
+    margin-top: 40px;
+    font-size: 1.5em;
+    font-weight: 800;
+    background: #008800;
+    color: #fff;
 }
 /* ========================== Footer ========================== */
 footer{
@@ -92,13 +125,27 @@ footer{
     margin-top: 2.5%;
     font-size: 3vw
     }
+
+    #netPlan1, #netPlan2, #netPlan3, #tvPlan1, #tvPlan2, #tvPlan3, .NaN{
+    font-size: 1em;
+    font-weight: 400;
+    min-width: 31%;
+    max-width: 31%   ;
+    }
+    #phone{
+        color: #337ab7;
+        padding: 2px 7px 0px 0px;
+    }
 }
 /* sm from 768px to 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
     #mainPageImage{
         height: 370px;
-        background-image: url('../img/bg-992-370.png');
+        background-image: url('../img/bg-992-370.png')
+    }
+
+    .nav>li{
+        font-size: 1em;
     }
 }
 /* md from 992px to 1199px */
@@ -109,19 +156,47 @@ footer{
     }
 }
 /* lg from 1200px and more */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1699px){
     #mainPageImage{
         height: 495px;
         background-image: url('../img/bg-2000-495.png');
     }
     #new{
-    font-size: 5.5vw;
+        font-size: 5.5vw;
     }
 
     #here{
-    font-size: 4.5vw;
+        font-size: 4.5vw;
     }
+
     #order{
         font-size: 25pt;
+    }
+}
+@media only screen and (min-width: 1700px){
+    #mainPageImage{
+        height: 495px;
+        background-image: url('../img/bg-2000-495.png');
+    }
+    #new{
+        font-size: 6em;
+    }
+
+    #here{
+        font-size: 5em;
+    }
+    #order{
+        font-size: 2.5em;
+    }
+    .nav-pills.nav-justified>li{
+        font-size: 2em;
+    }
+    #netPlan1, #netPlan2, #netPlan3, #tvPlan1, #tvPlan2, #tvPlan3, .NaN{
+    min-width: 315px;
+    max-width: 315px;
+    }
+    #Sum{
+    padding: 42px 0px 50px 5px;
+    margin-top: 38px;
     }
 }
