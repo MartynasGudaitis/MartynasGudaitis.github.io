@@ -67,33 +67,24 @@
 	   	<div class="tab-content">
 	   		<div class="tab-pane active fade in" id="Plans">
                 <div class="col-xs-10">
-                  <div class="btn-group">
-                      <button type="button" id="netPlan1" onclick="Add()">10 Mbps</button>
-                      <button type="button" id="netPlan2">50 Mbps</button>
-                      <button type="button" id="netPlan3">100 Mbps</button>
-                  </div>
-                  <ul class="list-inline">
-                      <li><button type="button" id="tvPlan1">Pagrindinis</button></li>
-                      <li><button type="button" id="tvPlan2">Viasat Sport</button></li>
-                      <li><button type="button" id="tvPlan3">Viasat Movie</button></li>
-                  </ul>  
+                    <p>Interneto Planai</p>
+                    <div class="btn-group" role="group" aria-label="Internetas">
+                      <button class="btn btn-primary" type="button" id="netPlan1" onclick="Add('netPlan1')">10 Mbps</button>
+                      <button class="btn btn-primary" type="button" id="netPlan2" onclick="Add('netPlan2')">50 Mbps</button>
+                      <button class="btn btn-primary" type="button" id="netPlan3" onclick="Add('netPlan3')">100 Mbps</button>
+                    </div>
+                    <p>Televizijos Planai</p>
+                    <div class="btn-group" ole="group" aria-label="Televizija">
+                        <button class="btn btn-primary" type="button" id="tvPlan1" onclick="Add('tvPlan1')">Pagrindinis</button>
+                        <button class="btn btn-primary" type="button" id="tvPlan2" onclick="Add('tvPlan2')">Viasat Sport</button>
+                        <button class="btn btn-primary" type="button" id="tvPlan3" onclick="Add('tvPlan3')">Viasat Movie</button>
+                    </div>  
                 </div>
+
                 <div class="col-xs-2" id="Sum">
                     <p id="total" >Suma<br>0.00 €</p>
                 </div>
-                <!--
-                <div class="btn-group" role="group" aria-label="Internetas">
-                    <button type="button" class="btn btn-secondary">10 Mbps</button>
-                    <button type="button" class="btn btn-secondary">50 Mbps</button>
-                    <button type="button" class="btn btn-secondary">100 Mbps</button>
-                </div>
-                <p>Televizijos paketai</p>
-                <div class="btn-group" role="group" aria-label="Televizija">
-                    <button type="button" class="btn btn-secondary">Pagrindinis</button>
-                    <button type="button" class="btn btn-secondary">Viasat Sport</button>
-                    <button type="button" class="btn btn-secondary">Viasat Movie</button>
-                </div>
-                -->
+
 	   		</div>
 	    	<div class="tab-pane fade" id="Adress">
 	    		<p>Cia reikes pasirinkti savo adresa</p>
