@@ -14,19 +14,24 @@ function AddSubtract(planId, activness){
 
 function WhichOfThreePlans(isActive1, isActive2, isActive3, planId1, planId2, planId3){
 	if (isActive1 == 0 && isActive2 == 0 && isActive3 == 0) {
-		document.getElementById(planId1).className += "active"; 
+		document.getElementById(planId1).className += "active";
+		console.log('all were equal to zero'); 
 		isActive1++;
+
 	} else if (isActive1 == 0 && isActive2 == 1 && isActive3 == 0) {
 		document.getElementById(planId1).className += "active"; 
 		isActive1++;
 		document.getElementById(planId2).className -= "active"; 
-		isActive1--;
+		isActive2--;
+		console.log('isActive2 was active. isActive1 ' + isActive1 + ' isActive2 ' + isActive2);
 	} else if (isActive1 == 0 && isActive2 == 0 && isActive3 == 1) {
 		document.getElementById(planId1).className += "active"; 
 		isActive1++;
 		document.getElementById(planId3).className -= "active"; 
 		isActive3--;
+		console.log('isActive3 was active. isActive1 ' + isActive1 + ' isActive3 ' + isActive3);
 	}
+	return [isActive1, isActive2, isActive3];
 }
 
 function Add(_id){
@@ -35,13 +40,24 @@ function Add(_id){
 
 	switch (_id) {
 	case planIds[0]:
-		WhichOfThreePlans(activePlans[0], activePlans[1], activePlans[2], planIds[0], planIds[1], planIds[2]);
+		var pln = new Array();
+		pln = WhichOfThreePlans(activePlans[0], activePlans[1], activePlans[2], planIds[0], planIds[1], planIds[2]);
+		for(var i = 0; i <=2; i++)
+			activePlans[i] = pln[i];
 		break;
 	case planIds[1]:
-		WhichOfThreePlans(activePlans[1], activePlans[0], activePlans[2], planIds[1], planIds[0], planIds[2]);
+		var pln = new Array();
+		pln = WhichOfThreePlans(activePlans[1], activePlans[0], activePlans[2], planIds[1], planIds[0], planIds[2]);
+		activePlans[1] = pln[0];
+		activePlans[0] = pln[1];
+		activePlans[2] = pln[2];
 		break;
 	case planIds[2]:
-		WhichOfThreePlans(activePlans[2], activePlans[1], activePlans[0], planIds[2], planIds[1], planIds[0]);
+		var pln = new Array();
+		pln = WhichOfThreePlans(activePlans[2], activePlans[1], activePlans[0], planIds[2], planIds[1], planIds[0]);
+		activePlans[2] = pln[0];
+		activePlans[1] = pln[1];
+		activePlans[0] = pln[2];
 		break;
 	case planIds[3]:
 		activePlans[3] = AddSubtract(planIds[3], activePlans[3]);
@@ -56,7 +72,8 @@ function Add(_id){
 		console.log('Some kind of error.');
 		break;
 	}
-	for (var i = 1; i <= activePlans.length; i++) {
+	for (var i = 0; i <= activePlans.length-1; i++) {
+		console.log(activePlans.toString());
 		if(activePlans[i] == 1 )
 			sum += planCosts[i];
 	}
