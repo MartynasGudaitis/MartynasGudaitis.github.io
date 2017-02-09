@@ -62,7 +62,7 @@ function Add(_id){
 		}
 		break;
 	case planIds[2]:
-		if (activePlans[1] == 1) {
+		if (activePlans[2] == 1) {
 			document.getElementById(_id).className -= "activated"; activePlans[2]--;
 		}
 		else{
