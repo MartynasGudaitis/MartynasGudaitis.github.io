@@ -18,19 +18,36 @@
        -moz-box-shadow: 0px 3px 9px -1px rgba(107,107,107,0.75);
             box-shadow: 0px 3px 9px -1px rgba(107,107,107,0.75);
 }
+#phone{
+    padding: 5px 7px 0px 0px;
+}
+
 .nav>li{
     padding: 10px;
     color: #003399;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.75em;
+    font-size: 1.5em;
+}
+
+.nav>li>a{
+    color: #003399;
 }
 
 .nav-pills.nav-justified>li{
+    background: #f2f2f2;
     font-size: 2vw;
     padding: 2px 0px;
     display: table-cell;
     width: 1%;
+}
+.nav-pills>li>a{
+    border-radius: 0px;
+    color: #003399;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+    background: #003399;
 }
 /* ========================== Main Page Image ========================== */
 .OpenSans{
@@ -125,6 +142,9 @@ footer{
         font-weight: 600;
         padding: 42px 0px 68px 5px
     }
+    #phone{
+        padding: 2px 7px 0px 0px;
+    }
 }
 /*from 400px to 767px */
 @media only screen and (min-width: 400px) and (max-width: 767px) {
@@ -138,16 +158,15 @@ footer{
     }
 
     #order{
-    margin-top: 2.5%;
-    font-size: 3vw
+        margin-top: 2.5%;
+        font-size: 3vw
     }
 
     #netPlan1, #netPlan2, #netPlan3, #tvPlan1, #tvPlan2, #tvPlan3, .NaN{
-    min-width: 31%;
-    max-width: 31%   ;
+        min-width: 31%;
+        max-width: 31%;
     }
     #phone{
-        color: #337ab7;
         padding: 2px 7px 0px 0px;
     }
 }
@@ -162,9 +181,23 @@ footer{
         font-size: 0.8em;
     }
     #netPlan1, #netPlan2, #netPlan3, #tvPlan1, #tvPlan2, #tvPlan3, .NaN{
-        min-width: 31%;
-        max-width: 31%;
+        min-width: 32%;
+        max-width: 32%;
     }
+    #new{
+        font-size: 5.25vw;
+    }
+
+    #here{
+        font-size: 4.25vw;
+    }
+    #order{
+        font-size: 18pt;
+    }
+
+    #phone{
+    padding: 12px 7px 0px 0px;
+}
 }
 /* md from 992px to 1199px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -172,12 +205,9 @@ footer{
         height: 445px;
         background-image: url('../img/bg-1200-445.png');
     }
-}
-/* lg from 1200px and more */
-@media only screen and (min-width: 1200px) and (max-width: 1699px){
-    #mainPageImage{
-        height: 495px;
-        background-image: url('../img/bg-2000-495.png');
+    #netPlan1, #netPlan2, #netPlan3, #tvPlan1, #tvPlan2, #tvPlan3, .NaN{
+        min-width: 32%;
+        max-width: 32%;
     }
     #new{
         font-size: 5.5vw;
@@ -186,9 +216,30 @@ footer{
     #here{
         font-size: 4.5vw;
     }
+        #order{
+        font-size: 20pt;
+    }
+}
+/* lg from 1200px to 1700px */
+@media only screen and (min-width: 1200px) and (max-width: 1699px){
+    #mainPageImage{
+        height: 495px;
+        background-image: url('../img/bg-2000-495.png');
+    }
+    #new{
+        font-size: 5.25vw;
+    }
+
+    #here{
+        font-size: 4.25vw;
+    }
 
     #order{
         font-size: 25pt;
+    }
+       
+    #netPlan1, #netPlan2, #netPlan3, #tvPlan1, #tvPlan2, #tvPlan3, .NaN{
+        font-size: 2.5vw;
     }
 }
 @media only screen and (min-width: 1700px){
@@ -212,6 +263,7 @@ footer{
     #netPlan1, #netPlan2, #netPlan3, #tvPlan1, #tvPlan2, #tvPlan3, .NaN{
     min-width: 315px;
     max-width: 315px;
+    font-size: 2em;
     }
     #Sum{
     padding: 42px 0px 50px 5px;
