@@ -1,6 +1,6 @@
 /* ========================== Navbar ========================== */ 
 .paddingZero, .nav>li>a{
-    padding:  1px;
+    padding:  0px;
 }
 
 #logo{
@@ -44,10 +44,6 @@
 .nav-pills>li>a{
     border-radius: 0px;
     color: #003399;
-}
-
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
-    background: #003399;
 }
 /* ========================== Main Page Image ========================== */
 .OpenSans{
@@ -93,7 +89,7 @@ p{
 }
 
 .NaNactivated,
-.activated, #netPlan1:hover, #netPlan2:hover, #netPlan3:hover, #tvPlan1:hover, #tvPlan2:hover, #tvPlan3:hover, .NaN:hover{
+.activated,{
     background: #003399;
 }
 
@@ -276,5 +272,11 @@ footer{
     #Sum{
     padding: 42px 0px 50px 5px;
     margin-top: 38px;
+    }
+}
+/* from 992px */
+@media only screen and (min-width: 992px){
+    #netPlan1:hover, #netPlan2:hover, #netPlan3:hover, #tvPlan1:hover, #tvPlan2:hover, #tvPlan3:hover, .NaN:hover{
+        background: #003399;
     }
 }
