@@ -79,7 +79,6 @@
 
 p{
     margin-bottom: 0px;
-    color: #fff;
 }
 
 #order{
@@ -93,30 +92,27 @@ p{
 .tvNet{
     font-size: 1.75em;
     padding-bottom: 5px;
-}
-
-.NaNactivated,
-.activated, #netPlan1:hover, #netPlan2:hover, #netPlan3:hover, #tvPlan1:hover, #tvPlan2:hover, #tvPlan3:hover, .NaN:hover{
-    background: #003399;
-}
-
-button{
-    background: #99bbff;
+    color: #fff;
 }
 
 #netPlan1, #netPlan2, #netPlan3, #tvPlan1, #tvPlan2, #tvPlan3, .NaN{
-    min-width: 31.25%;
-    max-width: 31.25%;
+    background: #003399;
+    border: 1.5px solid #fff;
     height: 55px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 3vw;
     font-weight: 600;
-    border: none;
     margin-right: 2px;
     margin-left: 2px;
     min-width: 32.5%;
     max-width: 32.5%; 
+}
+
+.NaNactivated,
+.activated{
+    color: #003399!important;
+    background: #fff!important;
 }
 
 #Sum{
